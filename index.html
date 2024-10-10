@@ -1,0 +1,207 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="demo7.js"></script>
+  </head>
+  <body onmousemove="moveCursor(event)">
+    <img
+      id="cursor"
+      src="images/cursor.gif"
+      alt=""
+      class="w-14 fixed ease-linear duration-300"
+    />
+    <div class="flex flex-col items-center px-4 sm:px-0">
+      <div class="flex justify-end items-center gap-8 container h-[72px]">
+        <img src="images/logo.png" alt="" class="mr-auto" />
+        <div class="hidden sm:block">About</div>
+        <div class="hidden sm:block">Services</div>
+        <div class="hidden sm:block">Blog</div>
+        <div class="hidden sm:block">Jobs</div>
+        <div class="hidden sm:block">Contact</div>
+        <img
+          src="images/ico_hamburger.webp"
+          alt=""
+          class="size-6 block sm:hidden cursor-pointer"
+          onclick="toggleMobileMenu()"
+        />
+        <div
+          id="mobileMenu"
+          class="fixed left-0 right-0 top-0 bottom-0 bg-test z-30 hidden justify-end"
+        >
+          <div
+            class="bg-white w-[300px] h-full p-8 flex flex-col items-end gap-6"
+          >
+            <img
+              src="images/ico_hamburger.webp"
+              alt=""
+              class="size-6 cursor-pointer"
+              onclick="toggleMobileMenu()"
+            />
+            <div>About</div>
+            <div>Services</div>
+            <div>Blog</div>
+            <div>Jobs</div>
+            <div>Contact</div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-16 grid sm:grid-cols-2 gap-8">
+        <div class="grid grid-cols-6 gap-5">
+          <img
+            src="images/cover_1.png"
+            alt=""
+            class="animate__animated animate__rotateIn md:col-span-3 sm:col-span-3 col-span-6 w-full"
+          />
+          <img
+            src="images/cover_2.png"
+            alt=""
+            class="animate__animated animate__rotateIn md:col-span-3 sm:col-span-3 col-span-6 w-full self-end"
+          />
+          <img
+            src="images/cover_3.png"
+            alt=""
+            class="animate__animated animate__rotateIn md:col-span-2 sm:col-span-3 col-span-6 w-full"
+          />
+          <img
+            src="images/cover_4.png"
+            alt=""
+            class="animate__animated animate__rotateIn md:col-span-4 sm:col-span-3 col-span-6 w-full"
+          />
+        </div>
+        <div class="flex flex-col px-12">
+          <div class="text-h2 font-bold">Headline</div>
+          <div class="text-lead1 mt-4">
+            Specially developed to help restore a more youthful appearance with
+            improved radiance and bounce.
+          </div>
+          <div class="flex gap-4 mt-10">
+            <img src="images/ico_1.png" alt="" class="object-contain m-4" />
+            <div class="flex flex-col">
+              <div class="text-h6">Headline</div>
+              <div>One line description</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img src="images/ico_1.png" alt="" class="object-contain m-4" />
+            <div class="flex flex-col">
+              <div class="text-h6">Headline</div>
+              <div>One line description</div>
+            </div>
+          </div>
+          <div
+            class="py-2.5 mt-10 text-center rounded bg-primary text-white w-25"
+          >
+            Buy now
+          </div>
+        </div>
+      </div>
+      <div class="container py-16 grid sm:grid-cols-2 gap-8">
+        <div class="grid grid-cols-6 gap-5">
+          <img
+            src="images/cover_1.png"
+            alt=""
+            data-wow-offset="50%"
+            class="wow animate__animated animate__rotateIn md:col-span-3 sm:col-span-3 col-span-6 w-full"
+          />
+          <img
+            src="images/cover_2.png"
+            alt=""
+            class="wow animate__animated animate__rotateIn md:col-span-3 sm:col-span-3 col-span-6 w-full self-end"
+          />
+          <img
+            src="images/cover_3.png"
+            alt=""
+            class="animate__animated animate__rotateIn md:col-span-2 sm:col-span-3 col-span-6 w-full"
+          />
+          <img
+            src="images/cover_4.png"
+            alt=""
+            class="animate__animated animate__rotateIn md:col-span-4 sm:col-span-3 col-span-6 w-full"
+          />
+        </div>
+        <div class="flex flex-col px-12">
+          <div class="text-h2 font-bold">Headline</div>
+          <div class="text-lead1 mt-4">
+            Specially developed to help restore a more youthful appearance with
+            improved radiance and bounce.
+          </div>
+          <div class="flex gap-4 mt-10">
+            <img src="images/ico_1.png" alt="" class="object-contain m-4" />
+            <div class="flex flex-col">
+              <div class="text-h6">Headline</div>
+              <div>One line description</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img src="images/ico_1.png" alt="" class="object-contain m-4" />
+            <div class="flex flex-col">
+              <div class="text-h6">Headline</div>
+              <div>One line description</div>
+            </div>
+          </div>
+          <div
+            class="py-2.5 mt-10 text-center rounded bg-primary text-white w-25"
+          >
+            Buy now
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-black flex justify-center">
+        <div class="container grid grid-cols-4 text-white py-16">
+          <div
+            class="wow animate__animated animate__swing animate__slower flex flex-col gap-3"
+          >
+            <div class="text-h6 mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div
+            class="wow animate__animated animate__swing animate__slower flex flex-col gap-3"
+          >
+            <div class="text-h6 mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div
+            class="wow animate__animated animate__swing animate__slower flex flex-col gap-3"
+          >
+            <div class="text-h6 mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div
+            class="wow animate__animated animate__swing animate__slower flex flex-col gap-3"
+          >
+            <div class="text-h6 mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div class="col-span-4 flex justify-center mt-14 relative">
+            <div
+              class="h-[1px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-white w-full"
+            ></div>
+            <img src="images/ico.png" alt="" class="w-40 bg-black px-16 z-10" />
+          </div>
+          <div class="col-span-4 text-center mt-8 font-abc">
+            © 2020 Landify UI Kit. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
